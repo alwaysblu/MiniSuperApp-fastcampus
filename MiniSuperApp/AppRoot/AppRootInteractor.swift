@@ -26,7 +26,7 @@ final class AppRootInteractor: PresentableInteractor<AppRootPresentable>, AppRoo
     presenter.listener = self
   }
   
-  override func didBecomeActive() {
+  override func didBecomeActive() {  // viewDidLoad와 비슷한 역할
     super.didBecomeActive()
     
     router?.attachTabs()

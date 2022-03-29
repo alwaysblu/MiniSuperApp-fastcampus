@@ -25,7 +25,7 @@ final class AppHomeInteractor: PresentableInteractor<AppHomePresentable>, AppHom
     presenter.listener = self
   }
   
-  override func didBecomeActive() {
+  override func didBecomeActive() { // viewDidLoad와 비슷한 역할
     super.didBecomeActive()
     
     let viewModels = [
